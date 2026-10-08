@@ -1,7 +1,7 @@
 /* ===== CONFIGURAÇÃO (edite apenas aqui) ===== */
 const CONFIG = {
   whatsapp: "5534991099276", // DDI + DDD + número, só dígitos
-  mensagem: "Olá, Bruno! vi seu portfólio e gostaria de saber mais sobre seu trabalho."
+  mensagem: "Olá, Bruno! Vi seu portfólio e quero saber mais informações sobre seu trabalho"
 };
 document.querySelectorAll("[data-wa]").forEach(a=>{a.href=`https://wa.me/${CONFIG.whatsapp}?text=${encodeURIComponent(CONFIG.mensagem)}`;a.target="_blank";a.rel="noopener"});
 document.getElementById("yr").textContent=new Date().getFullYear();
